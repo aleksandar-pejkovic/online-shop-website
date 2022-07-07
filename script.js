@@ -99,7 +99,7 @@ function addToCart(btn) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify()
+        body: JSON.stringify(item)
     }).then((response) => response.json())
         .then((data) => {
             console.table(data)
