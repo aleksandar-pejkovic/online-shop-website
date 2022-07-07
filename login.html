@@ -52,17 +52,15 @@
         </div>
     </nav>
     <br>
-    <div class="container">
-        <form class="login-form">
+    <div class="container login-container">
+        <form class="login-form login">
             <div class="mb-3">
-                <label for="usernameText" class="form-label">Username</label>
-                <input type="text" class="form-control" id="usernameText"">
+                <input type="text" class="form-control" id="usernameText" placeholder="username" autofocus>
             </div>
             <div class="mb-3">
-                <label for="passwordText" class="form-label">Password</label>
-                <input type="password" class="form-control" id="passwordText">
+                <input type="password" class="form-control" id="passwordText" placeholder="password">
             </div>
-            <button type="submit" class="btn btn-primary" onclick='loginValidation(this)'>Login</button>
+            <button type="submit" class="btn btn-primary login-btn" >Login</button>
         </form>
     </div>
 
