@@ -1,4 +1,6 @@
-let cartItems, user, url
+let user, url
+
+
 
 function setUser(user) {
     document.location.href = 'index.html';
@@ -97,9 +99,7 @@ function addToCart(btn) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(
-            item
-        )
+        body: JSON.stringify()
     }).then((response) => response.json())
         .then((data) => {
             console.table(data)
